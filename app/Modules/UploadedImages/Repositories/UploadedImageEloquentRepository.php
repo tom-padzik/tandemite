@@ -4,24 +4,24 @@ declare(strict_types=1);
 
 namespace App\Modules\UploadedImages\Repositories;
 
-use App\Modules\UploadedImages\Models\UploadedImages;
-use App\Modules\UploadedImages\Repositories\Contracts\UploadedImagesRepository;
+use App\Modules\UploadedImages\Models\UploadedImage;
+use App\Modules\UploadedImages\Repositories\Contracts\UploadedImageRepository;
 use Illuminate\Support\Collection;
 
-class UploadedImagesEloquentRepository implements UploadedImagesRepository
+class UploadedImageEloquentRepository implements UploadedImageRepository
 {
 
     public function all(): Collection
     {
-        return UploadedImages::query()->get();
+        return UploadedImage::query()->get();
     }
 
     public function create(
         string $name,
         string $surname,
         string $image,
-    ): UploadedImages {
-        $model = new UploadedImages();
+    ): UploadedImage {
+        $model = new UploadedImage();
         $model->name = $name;
         $model->surname = $surname;
         $model->image = $image;

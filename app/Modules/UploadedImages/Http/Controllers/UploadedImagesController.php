@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\UploadedImages\Http\Controllers;
 
 use App\Modules\UploadedImages\Http\Requests\ImageUploadRequest;
-use App\Modules\UploadedImages\Repositories\Contracts\UploadedImagesRepository;
+use App\Modules\UploadedImages\Repositories\Contracts\UploadedImageRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -18,7 +18,7 @@ use function sprintf;
 readonly class UploadedImagesController
 {
     public function __construct(
-        private UploadedImagesRepository $repository,
+        private UploadedImageRepository $repository,
     ) {
     }
 

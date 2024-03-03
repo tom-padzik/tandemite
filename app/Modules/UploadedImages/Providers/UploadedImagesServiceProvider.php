@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Modules\UploadedImages\Providers;
 
-use App\Modules\UploadedImages\Repositories\Contracts\UploadedImagesRepository;
-use App\Modules\UploadedImages\Repositories\UploadedImagesEloquentRepository;
+use App\Modules\UploadedImages\Repositories\Contracts\UploadedImageRepository;
+use App\Modules\UploadedImages\Repositories\UploadedImageEloquentRepository;
 use Illuminate\Support\ServiceProvider;
 
 use function base_path;
@@ -22,8 +22,8 @@ class UploadedImagesServiceProvider extends ServiceProvider
         );
 
         $this->app->singleton(
-            UploadedImagesRepository::class,
-            UploadedImagesEloquentRepository::class,
+            UploadedImageRepository::class,
+            UploadedImageEloquentRepository::class,
         );
     }
 

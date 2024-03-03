@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Modules\UploadedImages\Repositories\Contracts;
 
-use App\Modules\UploadedImages\Models\UploadedImages;
+use App\Modules\UploadedImages\Models\UploadedImage;
 use Illuminate\Support\Collection;
 
-interface UploadedImagesRepository
+interface UploadedImageRepository
 {
     /**
-     * @return Collection<UploadedImages>
+     * @return Collection<UploadedImage>
      */
     public function all(): Collection;
 
@@ -18,5 +18,5 @@ interface UploadedImagesRepository
         string $name,
         string $surname,
         string $image,
-    ): UploadedImages;
+    ): UploadedImage;
 }

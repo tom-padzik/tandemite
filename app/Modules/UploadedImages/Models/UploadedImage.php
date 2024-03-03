@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string          $surname
  * @property string          $image
  */
-class UploadedImages extends Model
+class UploadedImage extends Model
 {
     protected $table = 'uploaded_images';
     public $timestamps = false;
