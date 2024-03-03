@@ -4,10 +4,10 @@ Uzyta wersja Laravel: 10.46.0
 
 Po pobraniu:
 
-1. composer install
-2. trzeba skopiować .env-example -> .env
-2. php artisan migrate --seed
-3. php artisan serve
+1. trzeba skopiować .env-example -> .env
+2. composer install 
+3. php artisan migrate --seed 
+4. php artisan serve
 
 urls
 
