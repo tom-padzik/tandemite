@@ -16,7 +16,9 @@ Po pobraniu:
 
 4. php artisan serve
 
-urls - artisan działa na: http://127.0.0.1:8000
+Standardowo artisan działa na: http://127.0.0.1:8000
+
+**URLs**
 
 **upload obrazków:** http://127.0.0.1:8000/upload
 
