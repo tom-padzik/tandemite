@@ -5,6 +5,7 @@ Uzyta wersja Laravel: 10.46.0
 Po pobraniu:
 
 1. composer install
+2. trzeba skopiować .env-example -> .env
 2. php artisan migrate --seed
 3. php artisan serve
 
@@ -21,6 +22,9 @@ dane logowania (zdefiniowane w seeder: database/seeders/DatabaseSeeder.php)
 email: admin@example.com
 
 password: admin
+
+użyta jest baza sqlite więc nie trzeba definiować połączenia z bazą.
+
 
 
 
