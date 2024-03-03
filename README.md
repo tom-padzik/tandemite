@@ -25,6 +25,8 @@ password: admin
 
 użyta jest baza sqlite więc nie trzeba definiować połączenia z bazą.
 
+Pomimo tego że zadanie jest nieduże, to postanowiłem podzielić całość na Modules (app/Modules).
+Wolę taki podział niż trzymanie razem wszystkich modeli, kontrolerów czy innych klas w oddzielnych katalogach.
 
 
 
