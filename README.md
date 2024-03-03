@@ -16,13 +16,13 @@ Po pobraniu:
 
 4. php artisan serve
 
-urls
+urls - artisan działa na: http://127.0.0.1:8000
 
-**upload obrazków:** /upload
+**upload obrazków:** http://127.0.0.1:8000/upload
 
-**index obrazków:** /index
+**index obrazków:** http://127.0.0.1:8000/index
 
-Jeśli użytkownik nie jest zalogowany to zostanie przekierowany do /login
+Jeśli użytkownik nie jest zalogowany to zostanie przekierowany do http://127.0.0.1:8000/login
 
 dane logowania (zdefiniowane w seeder: database/seeders/DatabaseSeeder.php)
 
