@@ -32,7 +32,10 @@ email: admin@example.com
 
 password: admin
 
-użyta jest baza sqlite więc nie trzeba definiować połączenia z bazą.
+
+Na stronie listy obrazków (/index) można kliknąć na obrazek żeby zobaczyć jego pełną wersję w nowym tabie/oknie.
+
+Użyta jest baza sqlite więc nie trzeba definiować połączenia z bazą.
 
 Pomimo tego że zadanie jest nieduże, to postanowiłem podzielić całość na Modules (app/Modules).
 Wolę taki podział niż trzymanie razem wszystkich modeli, kontrolerów czy innych klas w oddzielnych katalogach.
