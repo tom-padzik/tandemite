@@ -5,8 +5,15 @@ Uzyta wersja Laravel: 10.46.0
 Po pobraniu:
 
 1. trzeba skopiować .env-example -> .env
-2. composer install 
-3. php artisan migrate --seed 
+2. composer install
+3. php artisan migrate --seed
+
+   WARN  The SQLite database does not exist: database/database.sqlite.
+   
+   Would you like to create it?
+
+   oczywiście zaznaczyć - **Yes**.
+
 4. php artisan serve
 
 urls
