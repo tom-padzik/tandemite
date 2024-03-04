@@ -9,8 +9,5 @@ Route::get('/index', [UploadedImagesController::class, 'index'])
 Route::get('/upload', [UploadedImagesController::class, 'uploadForm'])
     ->name('uploaded-images.upload-form');
 
-Route::post('/upload', [UploadedImagesController::class, 'upload'])
-    ->name('uploaded-images.upload');
-
 Route::post('/async-upload', [UploadedImagesController::class, 'upload'])
     ->name('uploaded-images.async-upload');
