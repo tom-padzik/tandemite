@@ -38,7 +38,7 @@
             const token = $("#uploadForm input[name=_token]").val();
             const file =  $("#uploadForm input[name=file]")[0].files[0];
             if (file.size > (2*1024*1024) || !file.type.startsWith('image/')) {
-                alert('Error: Max file size is 2MB.');
+                alert('Error: File must be image, and max file size is 2MB.');
                 return;
             }
             const formData = new FormData();
